@@ -1,5 +1,15 @@
-import React from "react"
+import React, { useState } from 'react';
+
+import SymbolInput from './components/SymbolInput';
+import SymbolRendered from './components/SymbolRendered';
 
 export default function Home() {
-  return <div>Hello world!</div>
+	const [userChordSymbol, setUserChordSymbol] = useState('');
+
+	return (
+		<div>
+			<SymbolInput setUserChordSymbol={setUserChordSymbol} />
+			<SymbolRendered userChordSymbol={userChordSymbol} />
+		</div>
+	);
 }
