@@ -45,7 +45,7 @@ const RenderedSymbol = ({
 		<div>
 			<h3>Symbol normalization</h3>
 			<p>
-				Please find below some examples of symbol normalization that{' '}
+				Here are a few examples of symbol normalization that{' '}
 				<code>ChordSymbol</code> allows to achieve.
 			</p>
 			<table className={'RenderedSymbol_TableContainer'}>
@@ -53,7 +53,7 @@ const RenderedSymbol = ({
 					<tr className={'RenderedSymbol_TableRow'}>
 						<th>Output</th>
 						<th>Description</th>
-						<th>Renderer config</th>
+						<th>Renderer configuration</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -66,8 +66,12 @@ const RenderedSymbol = ({
 						<td>
 							<strong>Default rendering</strong>
 							<p>
-								"Academic" rendering based on agreed upon symbol
-								namings rules.
+								"Academic" rendering based on the rules defined
+								in the books{' '}
+								<code>Contemporary Music Theory Series</code>{' '}
+								(by Mark Harrison) and{' '}
+								<code>Standardized Chord Symbol Notation</code>{' '}
+								(by Carl Brandt and Clinton Roemer).
 							</p>
 						</td>
 						<td>

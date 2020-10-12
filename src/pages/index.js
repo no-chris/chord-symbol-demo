@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import InternalRepresentation from './components/InternalRepresentation';
 import IntervalsList from './components/IntervalsList';
 import Intro from './components/Intro';
+import Logo from './components/Logo';
 import RenderedSymbol from './components/RenderedSymbol';
 import UserInput from './components/userInput/UserInput';
 
@@ -18,7 +19,7 @@ export default function Home() {
 
 	return (
 		<div className={'main'}>
-			<h1>ChordSymbol</h1>
+			<Logo />
 			<Intro />
 			<h2>Demo</h2>
 			<UserInput

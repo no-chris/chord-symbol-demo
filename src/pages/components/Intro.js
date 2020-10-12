@@ -4,14 +4,14 @@ const Intro = () => {
 	return (
 		<div>
 			<p>
-				<code>ChordSymbol</code> is a Javascript/NodeJs parser and
-				renderer for chord symbols. It transforms a string representing
-				a chord (<code>Cm7</code>, for example), into a suite of
-				intervals: <code>1</code>, <code>b3</code>, <code>5</code>,{' '}
-				<code>b7</code>. It also normalizes the chord characteristics by
-				isolating its quality, extensions, alterations, added and
-				omitted notes, which later allows rendering the chords in a
-				normalized way.
+				<code>ChordSymbol</code> is a Javascript/NodeJs library for
+				parsing and rendering chord symbols. It transforms a string
+				representing a chord (<code>Cm7</code>, for example), into a
+				suite of intervals: <code>1</code>, <code>b3</code>,{' '}
+				<code>5</code>, <code>b7</code>. It also normalizes the chord
+				characteristics by isolating its quality, extensions,
+				alterations, added and omitted notes, which allows rendering the
+				chords in a normalized way.
 			</p>
 			<ul>
 				<li>
