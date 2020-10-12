@@ -1,47 +1,42 @@
 @import '../../../../scss/abstract';
 
 .ui-UserInput_Container {
-  padding: $spacer-medium;
-  //border: 3px solid $gray-200;
-  background-color: $gray-200;
-}
-
-.ui-SymbolPresetList_Container {
-  //margin-top: $spacer-medium;
+	padding: $spacer-medium;
+	background-color: $gray-200;
 }
 
 .ui-SymbolPreset_Button {
-  margin-right: $spacer-medium;
+	margin-right: $spacer-medium;
 }
 
 .ui-SymbolInput_Container {
-  margin-top: $spacer-medium;
-  padding: $spacer-medium;
-  background-color: $color-info;
+	margin-top: $spacer-medium;
+	padding: $spacer-medium;
+	background-color: $color-info;
 }
 
 .ui-SymbolInput_Container-isValid {
-  background-color: $color-success;
+	background-color: $color-success;
 }
 
 .ui-SymbolInput_Container-isInvalid {
-  background-color: $color-danger;
+	background-color: $color-danger;
 }
 
 .ui-SymbolInput_Input {
-  width: 100%;
-  padding: $spacer-small;
-  text-align: center;
+	width: 100%;
+	padding: $spacer-small;
+	text-align: center;
 }
 
 .ui-RendererConfig_Container {
-  margin-top: $spacer-medium;
+	margin-top: $spacer-medium;
 }
 
 .ui-RendererConfigItem_Container {
-  padding: $spacer-tiny 0;
+	padding: $spacer-tiny 0;
 }
 
 .ui-RendererConfig_Checkbox {
-  margin-right: $spacer-small
+	margin-right: $spacer-small;
 }
