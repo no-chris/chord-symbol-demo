@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
+//todo: tokenise user input to avoid weird bhavior
+
+import InternalRepresentation from './components/InternalRepresentation';
+import IntervalsList from './components/IntervalsList';
+import RendererConfig from './components/RendererConfig';
 import SymbolInput from './components/SymbolInput';
 import SymbolPresetList from './components/SymbolPresetList';
 import SymbolRendered from './components/SymbolRendered';
-import RendererConfig from './components/RendererConfig';
-import IntervalsList from './components/IntervalsList';
 
 const defaultUserSymbol = 'Ab(b9)';
 
@@ -45,6 +48,7 @@ export default function Home() {
 				harmonizeAccidentals={harmonizeAccidentals}
 				useFlats={useFlats}
 			/>
+			<InternalRepresentation userChordSymbol={userChordSymbol} />
 		</div>
 	);
 }
