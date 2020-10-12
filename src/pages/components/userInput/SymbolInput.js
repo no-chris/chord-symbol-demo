@@ -4,7 +4,7 @@ import { parseChord } from 'chord-symbol';
 
 const SymbolInput = ({ userChordSymbol, setUserChordSymbol }) => {
 	const handleSymbolChange = (e) => {
-		const symbol = e.target.value;
+		const symbol = (e.target.value || '').trim();
 		setUserChordSymbol(symbol);
 	};
 

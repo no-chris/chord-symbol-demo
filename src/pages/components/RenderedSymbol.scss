@@ -1,0 +1,27 @@
+@import '../../../scss/abstract';
+
+.RenderedSymbol_TableContainer {
+  table-layout: auto;
+}
+
+.RenderedSymbol_TableHead {
+  background-color: $gray-700;
+  color: white;
+  font-weight: $weight-bold;
+
+  th {
+    padding: $spacer-tiny $spacer-small;
+  }
+}
+
+.RenderedSymbol_TableRow {
+  border-bottom: 1px solid $gray-400;
+
+  &:nth-of-type(even) {
+    background-color: $gray-100;
+  }
+
+  td {
+    padding: $spacer-tiny $spacer-small;
+  }
+}
