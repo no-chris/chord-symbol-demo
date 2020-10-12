@@ -2,19 +2,33 @@ import React from 'react';
 
 import { parseChord, chordRendererFactory } from 'chord-symbol';
 
-const renderDefault = chordRendererFactory();
-const renderShort = chordRendererFactory({ useShortNamings: true });
-const renderSimplifiedCore = chordRendererFactory({
-	useShortNamings: true,
-	simplify: 'core',
-});
-const renderSimplifiedMax = chordRendererFactory({
-	useShortNamings: true,
-	simplify: 'max',
-});
-
-const SymbolRendered = ({ userChordSymbol }) => {
+const SymbolRendered = ({
+	userChordSymbol,
+	transposeValue,
+	harmonizeAccidentals,
+	useFlats,
+}) => {
 	const chord = parseChord(userChordSymbol);
+
+	const configDefault = {
+		transposeValue,
+		harmonizeAccidentals,
+		useFlats,
+	};
+	const configShort = Object.assign({}, configDefault, {
+		useShortNamings: true,
+	});
+	const configSimplifiedCore = Object.assign({}, configShort, {
+		simplify: 'core',
+	});
+	const configSimplifiedMax = Object.assign({}, configShort, {
+		simplify: 'max',
+	});
+
+	const renderDefault = chordRendererFactory(configDefault);
+	const renderShort = chordRendererFactory(configShort);
+	const renderSimplifiedCore = chordRendererFactory(configSimplifiedCore);
+	const renderSimplifiedMax = chordRendererFactory(configSimplifiedMax);
 
 	return (
 		<div>
