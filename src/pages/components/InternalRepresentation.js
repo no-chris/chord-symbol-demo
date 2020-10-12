@@ -1,3 +1,5 @@
+import './InternalRepresentation.scss';
+
 import React from 'react';
 
 import { parseChord } from 'chord-symbol';
@@ -7,8 +9,10 @@ const InternalRepresentation = ({ userChordSymbol }) => {
 
 	return (
 		<div>
-			<h3>Internal Representation</h3>
-			<div>{JSON.stringify(parsed)}</div>
+			<h3>Chord internal representation (Json)</h3>
+			<div className={'InternalRepresentation_Container'}>
+				<pre className={'json'}>{JSON.stringify(parsed, null, 2)}</pre>
+			</div>
 		</div>
 	);
 };

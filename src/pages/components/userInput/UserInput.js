@@ -17,7 +17,7 @@ const UserInput = ({
 	setUseFlats,
 }) => {
 	return (
-		<div className={'userInput-container'}>
+		<div className={'ui-UserInput_Container'}>
 			<p>
 				Please enter a chord symbol or select one of the following
 				presets:

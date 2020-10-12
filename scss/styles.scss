@@ -7,12 +7,11 @@
   padding: $spacer-small;
 }
 
-.userInput-container {
-  padding: $spacer-medium;
-  //border: 3px solid $gray-200;
-  background-color: $gray-200;
-}
 
 button {
   background-color: $gray-500;
+}
+
+.json {
+  @include font-size(small);
 }

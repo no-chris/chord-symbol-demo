@@ -1,5 +1,11 @@
 @import '../../../../scss/abstract';
 
+.ui-UserInput_Container {
+  padding: $spacer-medium;
+  //border: 3px solid $gray-200;
+  background-color: $gray-200;
+}
+
 .ui-SymbolPresetList_Container {
   //margin-top: $spacer-medium;
 }

@@ -51,7 +51,6 @@ export default function Home() {
 				setTransposeValue={setTransposeValue}
 				setHarmonizeAccidentals={setHarmonizeAccidentals}
 				setUseFlats={setUseFlats}
-				setUserChordSymbol={setUserChordSymbol}
 			/>
 			<IntervalsList userChordSymbol={userChordSymbol} />
 			<SymbolRendered
