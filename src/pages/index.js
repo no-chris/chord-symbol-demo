@@ -19,7 +19,10 @@ export default function Home() {
 
 	return (
 		<div>
-			<h1>Chord-Symbol</h1>
+			<h1>ChordSymbol demo</h1>
+			<div>
+				<a href={'https://github.com/no-chris/chord-symbol'}>Github</a>
+			</div>
 			<p>
 				ChordSymbol is a Javascript/NodeJs parser and renderer for chord
 				symbols. It transforms a string representing a chord (Cm7, for
