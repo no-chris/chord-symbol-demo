@@ -5,7 +5,11 @@ const SymbolPreset = ({ setUserChordSymbol, preset }) => {
 		setUserChordSymbol(preset);
 	};
 
-	return <a onClick={handleClick}>{preset}</a>;
+	return (
+		<button className={'ui-SymbolPreset_Button'} onClick={handleClick}>
+			{preset}
+		</button>
+	);
 };
 
 export default SymbolPreset;

@@ -9,12 +9,14 @@ const HarmonizeAccidentalsConfig = ({
 	};
 
 	return (
-		<div>
+		<div className={'ui-RendererConfigItem_Container '}>
 			<input
 				type={'checkbox'}
 				value={harmonizeAccidentals}
 				onChange={handleChange}
 				id={'harmonizeAccidentals'}
+				checked={harmonizeAccidentals}
+				className={'ui-RendererConfig_Checkbox'}
 			/>
 			<label htmlFor={'harmonizeAccidentals'}>
 				{' '}

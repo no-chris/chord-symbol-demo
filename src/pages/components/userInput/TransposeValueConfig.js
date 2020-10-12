@@ -13,7 +13,7 @@ const TransposeValueConfig = ({ transposeValue, setTransposeValue }) => {
 	};
 
 	return (
-		<div>
+		<div className={'ui-RendererConfigItem_Container '}>
 			Transpose value: <button onClick={decreaseTransposeValue}>-</button>{' '}
 			{transposeValue} <button onClick={increaseTransposeValue}>+</button>
 		</div>

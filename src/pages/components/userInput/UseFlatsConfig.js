@@ -7,13 +7,15 @@ const UseFlatsConfig = ({ useFlats, setUseFlats, harmonizeAccidentals }) => {
 	};
 
 	return (
-		<div>
+		<div className={'ui-RendererConfigItem_Container '}>
 			<input
 				type={'checkbox'}
 				value={useFlats}
 				onChange={handleChange}
 				id={'useFlats'}
 				disabled={isDisabled}
+				checked={useFlats}
+				className={'ui-RendererConfig_Checkbox'}
 			/>
 			<label htmlFor={'useFlats'}> Use flats</label>
 		</div>

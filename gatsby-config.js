@@ -1,10 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
+/* eslint-env node */
 module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+	siteMetadata: {
+		title: `ChordSymbol demo`,
+		description: `ChordSymbol is a Javascript/NodeJs parser and renderer for chord symbols `,
+		author: `Christophe Noël`,
+		copyrightAuthor: `Christophe Noël`,
+		//siteUrl: `https://cn-photos.com`,
+		//gaTrackingId: gaId,
+	},
+	plugins: [`gatsby-plugin-sass`],
+};

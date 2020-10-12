@@ -7,7 +7,7 @@ const InternalRepresentation = ({ userChordSymbol }) => {
 
 	return (
 		<div>
-			<h2>Internal Representation</h2>
+			<h3>Internal Representation</h3>
 			<div>{JSON.stringify(parsed)}</div>
 		</div>
 	);

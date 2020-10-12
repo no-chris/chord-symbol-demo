@@ -8,7 +8,7 @@ const IntervalsList = ({ userChordSymbol }) => {
 
 	return (
 		<div>
-			<h2>Chord intervals</h2>
+			<h3>Chord intervals</h3>
 			<div>{intervals.join(', ')}</div>
 		</div>
 	);

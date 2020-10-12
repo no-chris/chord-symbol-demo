@@ -1,0 +1,41 @@
+@import '../../../../scss/abstract';
+
+.ui-SymbolPresetList_Container {
+  //margin-top: $spacer-medium;
+}
+
+.ui-SymbolPreset_Button {
+  margin-right: $spacer-medium;
+}
+
+.ui-SymbolInput_Container {
+  margin-top: $spacer-medium;
+  padding: $spacer-medium;
+  background-color: $color-info;
+}
+
+.ui-SymbolInput_Container-isValid {
+  background-color: $color-success;
+}
+
+.ui-SymbolInput_Container-isInvalid {
+  background-color: $color-danger;
+}
+
+.ui-SymbolInput_Input {
+  width: 100%;
+  padding: $spacer-small;
+  text-align: center;
+}
+
+.ui-RendererConfig_Container {
+  margin-top: $spacer-medium;
+}
+
+.ui-RendererConfigItem_Container {
+  padding: $spacer-tiny 0;
+}
+
+.ui-RendererConfig_Checkbox {
+  margin-right: $spacer-small
+}

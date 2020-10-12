@@ -41,7 +41,7 @@ const SymbolRendered = ({
 
 	return (
 		<div>
-			<h2>Symbol normalization</h2>
+			<h3>Symbol normalization</h3>
 			<table>
 				<thead>
 					<tr>
