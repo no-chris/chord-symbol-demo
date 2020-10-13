@@ -2,11 +2,10 @@ import '../../scss/styles.scss';
 
 import React, { useState } from 'react';
 
-import InternalRepresentation from './components/InternalRepresentation';
-import IntervalsList from './components/IntervalsList';
+import Results from './components/Results';
 import Intro from './components/Intro';
 import Logo from './components/Logo';
-import RenderedSymbol from './components/RenderedSymbol';
+import RenderedSymbolList from './components/RenderedSymbolList';
 import UserInput from './components/userInput/UserInput';
 
 const defaultUserSymbol = 'Ab(b9)';
@@ -32,14 +31,18 @@ export default function Home() {
 				setHarmonizeAccidentals={setHarmonizeAccidentals}
 				setUseFlats={setUseFlats}
 			/>
-			<IntervalsList userChordSymbol={userChordSymbol} />
-			<RenderedSymbol
+			<Results
 				userChordSymbol={userChordSymbol}
 				transposeValue={transposeValue}
 				harmonizeAccidentals={harmonizeAccidentals}
 				useFlats={useFlats}
 			/>
-			<InternalRepresentation userChordSymbol={userChordSymbol} />
+			<RenderedSymbolList
+				userChordSymbol={userChordSymbol}
+				transposeValue={transposeValue}
+				harmonizeAccidentals={harmonizeAccidentals}
+				useFlats={useFlats}
+			/>
 		</div>
 	);
 }

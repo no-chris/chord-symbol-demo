@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { parseChord } from 'chord-symbol';
+import { chordParserFactory } from '../../../core/chord-symbol';
 
 const SymbolInput = ({ userChordSymbol, setUserChordSymbol }) => {
+	const parseChord = chordParserFactory();
+
 	const handleSymbolChange = (e) => {
 		const symbol = (e.target.value || '').trim();
 		setUserChordSymbol(symbol);

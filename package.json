@@ -14,7 +14,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "chord-symbol": "^0.5.1",
     "gatsby": "^2.24.67",
     "gatsby-plugin-sass": "^2.3.16",
     "node-sass": "^4.14.1",
