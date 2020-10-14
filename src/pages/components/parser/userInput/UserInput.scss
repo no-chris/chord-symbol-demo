@@ -1,17 +1,16 @@
-@import '../../../../scss/abstract';
+@import '../../../../../scss/abstract';
 
 .ui-UserInput_Container {
-	padding: $spacer-medium;
-	background-color: $gray-200;
 }
 
 .ui-SymbolPreset_Button {
+	margin-top: $spacer-small;
 	margin-right: $spacer-medium;
 }
 
 .ui-SymbolInput_Container {
 	margin-top: $spacer-medium;
-	padding: $spacer-medium;
+	padding: $spacer-small;
 	background-color: $color-info;
 }
 
@@ -27,16 +26,4 @@
 	width: 100%;
 	padding: $spacer-small;
 	text-align: center;
-}
-
-.ui-RendererConfig_Container {
-	margin-top: $spacer-medium;
-}
-
-.ui-RendererConfigItem_Container {
-	padding: $spacer-tiny 0;
-}
-
-.ui-RendererConfig_Checkbox {
-	margin-right: $spacer-small;
 }

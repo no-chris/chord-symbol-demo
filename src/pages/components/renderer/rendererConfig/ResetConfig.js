@@ -1,16 +1,18 @@
 import React from 'react';
 
 const ResetConfig = ({
-	setUserChordSymbol,
 	setTransposeValue,
 	setHarmonizeAccidentals,
 	setUseFlats,
+	setSimplify,
+	setUseShortNamings,
 }) => {
 	const handleClick = () => {
-		setUserChordSymbol('');
 		setTransposeValue(0);
 		setHarmonizeAccidentals(false);
 		setUseFlats(false);
+		setSimplify('none');
+		setUseShortNamings(false);
 	};
 
 	return (

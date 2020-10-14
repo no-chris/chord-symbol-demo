@@ -29,11 +29,19 @@ button {
 	white-space: nowrap;
 }
 
+.chordSymbol-h2 {
+	white-space: nowrap;
+	@include font-size(h2);
+	color: black;
+	//background-color: $gray-100;
+}
+
 h1,
 h2,
 h3 {
 	margin: $spacer-medium 0 $spacer-small;
 }
+
 .Json_Details {
 	@include font-size(small);
 	margin-top: $spacer-small;
@@ -47,5 +55,14 @@ h3 {
 		padding: $spacer-medium;
 		border: 1px solid $gray-400;
 		margin-top: $spacer-small;
+	}
+}
+
+.configuration_Table {
+	border-top: 1px solid $gray-400;
+	margin-top: $spacer-small;
+
+	tr {
+		border-bottom: 1px solid $gray-400;
 	}
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { chordParserFactory } from '../../../core/chord-symbol';
+import { chordParserFactory } from '../../../../core/chord-symbol';
 
-const SymbolInput = ({ userChordSymbol, setUserChordSymbol }) => {
-	const parseChord = chordParserFactory();
+const SymbolInput = ({ userChordSymbol, setUserChordSymbol, altIntervals }) => {
+	const parseChord = chordParserFactory({ altIntervals });
 
 	const handleSymbolChange = (e) => {
 		const symbol = (e.target.value || '').trim();

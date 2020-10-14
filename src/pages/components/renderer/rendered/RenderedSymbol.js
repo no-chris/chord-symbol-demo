@@ -3,7 +3,7 @@ import React from 'react';
 import {
 	chordParserFactory,
 	chordRendererFactory,
-} from '../../core/chord-symbol';
+} from '../../../../core/chord-symbol';
 
 const invalidChordString = '-';
 

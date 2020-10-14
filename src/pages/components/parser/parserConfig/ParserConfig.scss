@@ -1,0 +1,26 @@
+@import '../../../../../scss/abstract';
+
+.parserConfig_Container {
+	margin-top: $spacer-small;
+}
+
+.parserConfigItem_Container {
+	padding: $spacer-tiny 0;
+}
+
+.pc-AltIntervalList_Container {
+}
+
+.pc-AltIntervalList_Label {
+	margin-right: $spacer-medium;
+	display: inline-block;
+}
+
+.pc-AltIntervalList_Item {
+	margin-right: $spacer-medium;
+	display: inline-block;
+}
+
+.pc-AltIntervalList_Checkbox {
+	margin-right: $spacer-tiny;
+}

@@ -1,20 +1,23 @@
-import './RenderedSymbolList.scss';
-
 import React from 'react';
 
 import RenderedSymbol from './RenderedSymbol';
 
 const RenderedSymbolList = ({
 	userChordSymbol,
+	simplify,
 	transposeValue,
 	harmonizeAccidentals,
 	useFlats,
+	useShortNamings,
 }) => {
 	const configDefault = {
-		transposeValue,
 		harmonizeAccidentals,
+		simplify,
+		transposeValue,
 		useFlats,
+		useShortNamings,
 	};
+	console.log(configDefault);
 
 	const renderList = [
 		{
@@ -26,7 +29,7 @@ const RenderedSymbolList = ({
 				'and <code>Standardized Chord Symbol Notation</code> (by Carl Brandt and Clinton Roemer)',
 		},
 		{
-			title: '"Short" rendering',
+			title: 'useShortNamings: true',
 			configRenderer: Object.assign({}, configDefault, {
 				useShortNamings: true,
 			}),
@@ -58,11 +61,6 @@ const RenderedSymbolList = ({
 
 	return (
 		<div>
-			<h3>Normalization variants</h3>
-			<p>
-				Here are a few examples of symbol normalization that you can
-				achieve with <code>ChordSymbol</code>.
-			</p>
 			<table className={'RenderedSymbol_TableContainer'}>
 				<thead className={'RenderedSymbol_TableHead'}>
 					<tr className={'RenderedSymbol_TableRow'}>
@@ -71,8 +69,9 @@ const RenderedSymbolList = ({
 					</tr>
 				</thead>
 				<tbody>
-					{renderList.map((props) => (
+					{renderList.map((props, i) => (
 						<RenderedSymbol
+							key={i}
 							userChordSymbol={userChordSymbol}
 							{...props}
 						/>
