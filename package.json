@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "chord-symbol-demo",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "Demo Site for the ChordSymbol library",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -17,11 +17,14 @@
     "custom-piano-keys": "0.0.14",
     "gatsby": "^2.24.67",
     "gatsby-plugin-sass": "^2.3.16",
-    "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "node-sass": "^4.14.1",
+    "eslint": "^7.11.0",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "prettier": "2.1.2"
   },
   "repository": {

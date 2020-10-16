@@ -19,7 +19,7 @@ const Intro = () => {
 				chord (<code>Cm7</code>, for example) into a suite of intervals
 				(<code>1, b3, 5, b7</code>) and individual notes (
 				<code>C, Eb, G, Bb</code>). It will also normalize the chord
-				symbol, such as it doesn't matter if the original input was{' '}
+				symbol, such as it doesn&apos;t matter if the original input was{' '}
 				<code>Cm7</code>, <code>CMINOR7</code>,<code>C7min</code>, or{' '}
 				<code>C7mi</code>: <code>ChordSymbol</code> will consistently
 				render it as

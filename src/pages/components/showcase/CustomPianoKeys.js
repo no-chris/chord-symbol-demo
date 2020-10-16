@@ -27,8 +27,8 @@ const CustomPianoKeys = ({ renderedChordRaw }) => {
 		<div className={'Showcase_Item'}>
 			<h3>Custom Piano Keys</h3>
 			<p>
-				<code>ChordSymbol</code>'s output data is used as an input to{' '}
-				<code>Custom piano keys</code>.
+				<code>ChordSymbol</code>&apos;s output data is used as an input
+				to <code>Custom piano keys</code>.
 			</p>
 			<div>
 				{(renderedChordRaw &&
