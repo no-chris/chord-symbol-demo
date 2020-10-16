@@ -2,7 +2,7 @@ import '../../scss/styles.scss';
 
 import React, { useState } from 'react';
 
-import { chordParserFactory, chordRendererFactory } from '../core/chord-symbol';
+import { chordParserFactory, chordRendererFactory } from 'chord-symbol';
 
 import Parser from './components/parser/Parser';
 import Intro from './components/Intro';
@@ -39,6 +39,8 @@ export default function Home() {
 		useFlats,
 		simplify,
 	};
+	const renderDefault = chordRendererFactory();
+	const renderedChordDefault = renderDefault(parsedChord);
 	const renderChordTxt = chordRendererFactory(rendererConfig);
 	rendererConfig.printer = 'raw';
 	const renderChordRaw = chordRendererFactory(rendererConfig);
@@ -56,7 +58,7 @@ export default function Home() {
 				setAltIntervals={setAltIntervals}
 				setUserChordSymbol={setUserChordSymbol}
 				parsedChord={parsedChord}
-				renderedChordTxt={renderedChordTxt}
+				renderedChordDefault={renderedChordDefault}
 			/>
 			<Renderer
 				useFlats={useFlats}

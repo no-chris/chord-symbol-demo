@@ -12,7 +12,7 @@ const Parser = ({
 	setUserChordSymbol,
 	userChordSymbol,
 	parsedChord,
-	renderedChordTxt,
+	renderedChordDefault,
 }) => {
 	return (
 		<div>
@@ -30,7 +30,7 @@ const Parser = ({
 				/>
 				<Parsed
 					parsedChord={parsedChord}
-					renderedChordTxt={renderedChordTxt}
+					renderedChordTxt={renderedChordDefault}
 				/>
 			</div>
 		</div>
