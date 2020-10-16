@@ -2,10 +2,13 @@ import '../../scss/styles.scss';
 
 import React, { useState } from 'react';
 
+import { chordParserFactory, chordRendererFactory } from '../core/chord-symbol';
+
 import Parser from './components/parser/Parser';
 import Intro from './components/Intro';
 import Logo from './components/Logo';
 import Renderer from './components/renderer/Renderer';
+import Showcase from './components/showcase/Showcase';
 
 const defaultUserSymbol = 'Ab(b9)';
 const defaultAltIntervals = {
@@ -26,6 +29,22 @@ export default function Home() {
 	const [useFlats, setUseFlats] = useState(false);
 	const [altIntervals, setAltIntervals] = useState(defaultAltIntervals);
 
+	const parseChord = chordParserFactory({ altIntervals });
+	const parsedChord = parseChord(userChordSymbol);
+
+	const rendererConfig = {
+		useShortNamings,
+		transposeValue,
+		harmonizeAccidentals,
+		useFlats,
+		simplify,
+	};
+	const renderChordTxt = chordRendererFactory(rendererConfig);
+	rendererConfig.printer = 'raw';
+	const renderChordRaw = chordRendererFactory(rendererConfig);
+	const renderedChordTxt = renderChordTxt(parsedChord);
+	const renderedChordRaw = renderChordRaw(parsedChord);
+
 	return (
 		<div className={'main'}>
 			<Logo />
@@ -38,8 +57,6 @@ export default function Home() {
 				setUserChordSymbol={setUserChordSymbol}
 			/>
 			<Renderer
-				altIntervals={altIntervals}
-				userChordSymbol={userChordSymbol}
 				useFlats={useFlats}
 				transposeValue={transposeValue}
 				harmonizeAccidentals={harmonizeAccidentals}
@@ -50,6 +67,12 @@ export default function Home() {
 				setTransposeValue={setTransposeValue}
 				setHarmonizeAccidentals={setHarmonizeAccidentals}
 				setUseFlats={setUseFlats}
+				renderedChordTxt={renderedChordTxt}
+				renderedChordRaw={renderedChordRaw}
+			/>
+			<Showcase
+				renderedChordTxt={renderedChordTxt}
+				renderedChordRaw={renderedChordRaw}
 			/>
 			<div>MIT License (2019-2020)</div>
 		</div>

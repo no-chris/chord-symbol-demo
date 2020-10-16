@@ -4,6 +4,7 @@ import React from 'react';
 
 import RendererConfig from './rendererConfig/RendererConfig';
 import Rendered from './rendered/Rendered';
+import Showcase from '../showcase/Showcase';
 
 const Renderer = ({
 	harmonizeAccidentals,
@@ -11,13 +12,13 @@ const Renderer = ({
 	transposeValue,
 	useFlats,
 	useShortNamings,
-	userChordSymbol,
 	setHarmonizeAccidentals,
 	setSimplify,
 	setTransposeValue,
 	setUseFlats,
 	setUseShortNamings,
-	altIntervals,
+	renderedChordTxt,
+	renderedChordRaw,
 }) => {
 	return (
 		<div>
@@ -36,13 +37,8 @@ const Renderer = ({
 					setUseShortNamings={setUseShortNamings}
 				/>
 				<Rendered
-					userChordSymbol={userChordSymbol}
-					useShortNamings={useShortNamings}
-					simplify={simplify}
-					harmonizeAccidentals={harmonizeAccidentals}
-					transposeValue={transposeValue}
-					useFlats={useFlats}
-					altIntervals={altIntervals}
+					renderedChordTxt={renderedChordTxt}
+					renderedChordRaw={renderedChordRaw}
 				/>
 			</div>
 		</div>
