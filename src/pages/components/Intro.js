@@ -4,15 +4,15 @@ const Intro = () => {
 	return (
 		<div>
 			<p>
-				<code>ChordSymbol</code> is the ultimate chord symbol parser and
-				renderer for Javascript/NodeJS.
+				<code>ChordSymbol</code> is the definitive chord symbol parser
+				and renderer for Javascript/NodeJS.
 			</p>
 			<p>
 				While most chord parsing libraries expect you to write chord
 				symbols in a specific way, <code>ChordSymbol</code> can handle
-				whatever chord syntax you throw at him, or almost. And we can
-				prove it: currently, the unit test suite contains more than 65
-				000 distinct chords symbols!
+				whatever chord syntax you throw at him, or almost. Currently,
+				the unit test suite contains more than 65 000 distinct chords
+				symbols!
 			</p>
 			<p>
 				<code>ChordSymbol</code> will transform a string representing a

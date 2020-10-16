@@ -65,4 +65,13 @@ h3 {
 	tr {
 		border-bottom: 1px solid $gray-400;
 	}
+
+	td {
+		padding: $spacer-tiny 0;
+	}
+}
+
+.configuration_Desc {
+	font-style: italic;
+	@include font-size(small);
 }

@@ -23,9 +23,7 @@ const AltIntervalConfigList = ({
 
 	return (
 		<div className={'parserConfigItem_Container'}>
-			<div className={'pc-AltIntervalList_Label'}>
-				Alt intervals (enter an <code>alt</code> symbol to enable):
-			</div>
+			<div className={'pc-AltIntervalList_Label'}>Alt intervals:</div>
 			{altIntervalsList.map((interval) => (
 				<AltIntervalConfig
 					key={interval.id}
