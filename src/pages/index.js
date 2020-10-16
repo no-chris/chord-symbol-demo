@@ -8,7 +8,6 @@ import Parser from './components/parser/Parser';
 import Intro from './components/Intro';
 import Logo from './components/Logo';
 import Renderer from './components/renderer/Renderer';
-import Showcase from './components/showcase/Showcase';
 
 const defaultUserSymbol = 'Ab(b9)';
 const defaultAltIntervals = {
@@ -71,10 +70,6 @@ export default function Home() {
 				setTransposeValue={setTransposeValue}
 				setHarmonizeAccidentals={setHarmonizeAccidentals}
 				setUseFlats={setUseFlats}
-				renderedChordTxt={renderedChordTxt}
-				renderedChordRaw={renderedChordRaw}
-			/>
-			<Showcase
 				renderedChordTxt={renderedChordTxt}
 				renderedChordRaw={renderedChordRaw}
 			/>
