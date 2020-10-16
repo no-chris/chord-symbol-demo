@@ -16,7 +16,7 @@ const ParserConfig = ({ userChordSymbol, altIntervals, setAltIntervals }) => {
 					<tr>
 						<td>
 							<AltIntervalConfigList
-								userChordSymbol={userChordSymbol}
+								parsedChord={parsedChord}
 								altIntervals={altIntervals}
 								setAltIntervals={setAltIntervals}
 							/>

@@ -11,25 +11,23 @@ const Parser = ({
 	setAltIntervals,
 	setUserChordSymbol,
 	userChordSymbol,
+	parsedChord,
 }) => {
 	return (
 		<div>
 			<h3>Parser</h3>
 			<div className={'Parser_Container'}>
 				<UserInput
-					altIntervals={altIntervals}
+					parsedChord={parsedChord}
 					userChordSymbol={userChordSymbol}
 					setUserChordSymbol={setUserChordSymbol}
 				/>
 				<ParserConfig
+					parsedChord={parsedChord}
 					altIntervals={altIntervals}
-					userChordSymbol={userChordSymbol}
 					setAltIntervals={setAltIntervals}
 				/>
-				<Parsed
-					userChordSymbol={userChordSymbol}
-					altIntervals={altIntervals}
-				/>
+				<Parsed parsedChord={parsedChord} />
 			</div>
 		</div>
 	);

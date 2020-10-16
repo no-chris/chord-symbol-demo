@@ -2,20 +2,9 @@ import './Parsed.scss';
 
 import React from 'react';
 
-import {
-	chordParserFactory,
-	chordRendererFactory,
-} from '../../../../core/chord-symbol';
-
 import ChordTable from '../../ChordTable';
 
-const Parsed = ({ userChordSymbol, altIntervals }) => {
-	const parseChord = chordParserFactory({ altIntervals });
-	const parsed = parseChord(userChordSymbol);
-
-	const renderChord = chordRendererFactory();
-	const rendered = renderChord(parsed);
-
+const Parsed = ({ parsedChord }) => {
 	return (
 		<div>
 			<div className={'Parsed_Container'}>
@@ -28,7 +17,7 @@ const Parsed = ({ userChordSymbol, altIntervals }) => {
 				<details className={'Json_Details'}>
 					<summary>JSON representation of parsed chord</summary>
 					<pre className={'json'}>
-						{JSON.stringify(parsed || {}, null, 2)}
+						{JSON.stringify(parsedChord || {}, null, 2)}
 					</pre>
 				</details>
 			</div>

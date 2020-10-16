@@ -1,17 +1,12 @@
 import React from 'react';
 
-import { chordParserFactory } from '../../../../core/chord-symbol';
-
 import AltIntervalConfig from './AltIntervalConfig';
 
 const AltIntervalConfigList = ({
-	userChordSymbol,
+	parsedChord,
 	altIntervals,
 	setAltIntervals,
 }) => {
-	const parseChord = chordParserFactory({ altIntervals });
-	const parsed = parseChord(userChordSymbol);
-
 	const altIntervalsList = [
 		{ id: 'fifthFlat', label: 'b5' },
 		{ id: 'fifthSharp', label: '#5' },
@@ -31,7 +26,9 @@ const AltIntervalConfigList = ({
 					altIntervals={altIntervals}
 					id={interval.id}
 					label={interval.label}
-					disabled={parsed ? !parsed.normalized.intents.alt : true}
+					disabled={
+						parsedChord ? !parsedChord.normalized.intents.alt : true
+					}
 				/>
 			))}
 		</div>

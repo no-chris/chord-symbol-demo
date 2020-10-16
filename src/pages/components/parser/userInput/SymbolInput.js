@@ -1,10 +1,6 @@
 import React from 'react';
 
-import { chordParserFactory } from '../../../../core/chord-symbol';
-
-const SymbolInput = ({ userChordSymbol, setUserChordSymbol, altIntervals }) => {
-	const parseChord = chordParserFactory({ altIntervals });
-
+const SymbolInput = ({ userChordSymbol, setUserChordSymbol, parsedChord }) => {
 	const handleSymbolChange = (e) => {
 		const symbol = (e.target.value || '').trim();
 		setUserChordSymbol(symbol);
@@ -12,7 +8,7 @@ const SymbolInput = ({ userChordSymbol, setUserChordSymbol, altIntervals }) => {
 
 	const classNames = ['ui-SymbolInput_Container'];
 	if (userChordSymbol !== '') {
-		if (parseChord(userChordSymbol)) {
+		if (parsedChord) {
 			classNames.push('ui-SymbolInput_Container-isValid');
 		} else {
 			classNames.push('ui-SymbolInput_Container-isInvalid');

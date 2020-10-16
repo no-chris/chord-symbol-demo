@@ -5,7 +5,7 @@ import React from 'react';
 import SymbolPresetList from './SymbolPresetList';
 import SymbolInput from './SymbolInput';
 
-const UserInput = ({ altIntervals, userChordSymbol, setUserChordSymbol }) => {
+const UserInput = ({ parsedChord, userChordSymbol, setUserChordSymbol }) => {
 	return (
 		<div>
 			<div className={'ui-UserInput_Container'}>
@@ -15,7 +15,7 @@ const UserInput = ({ altIntervals, userChordSymbol, setUserChordSymbol }) => {
 				</div>
 				<SymbolPresetList setUserChordSymbol={setUserChordSymbol} />
 				<SymbolInput
-					altIntervals={altIntervals}
+					parsedChord={parsedChord}
 					userChordSymbol={userChordSymbol}
 					setUserChordSymbol={setUserChordSymbol}
 				/>

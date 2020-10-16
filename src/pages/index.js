@@ -55,6 +55,7 @@ export default function Home() {
 				userChordSymbol={userChordSymbol}
 				setAltIntervals={setAltIntervals}
 				setUserChordSymbol={setUserChordSymbol}
+				parsedChord={parsedChord}
 			/>
 			<Renderer
 				useFlats={useFlats}
