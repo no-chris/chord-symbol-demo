@@ -4,7 +4,7 @@ import React from 'react';
 
 import AltIntervalConfigList from './AltIntervalConfigList';
 
-const ParserConfig = ({ userChordSymbol, altIntervals, setAltIntervals }) => {
+const ParserConfig = ({ parsedChord, altIntervals, setAltIntervals }) => {
 	const altIntervalsDesc =
 		'user selection of intervals affected by the "alt" modifier (all by default). ' +
 		'If you would like "alt" to consistently yield a specific set of intervals, you can specify those here.';

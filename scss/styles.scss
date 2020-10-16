@@ -75,3 +75,10 @@ h3 {
 	font-style: italic;
 	@include font-size(small);
 }
+
+.License {
+	text-align: center;
+	margin: $spacer-large 0;
+	@include font-size(small);
+	color: $gray-600;
+}

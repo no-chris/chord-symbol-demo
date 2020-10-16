@@ -4,7 +4,6 @@ import React from 'react';
 
 import RendererConfig from './rendererConfig/RendererConfig';
 import Rendered from './rendered/Rendered';
-import Showcase from '../showcase/Showcase';
 
 const Renderer = ({
 	harmonizeAccidentals,

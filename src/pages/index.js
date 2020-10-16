@@ -56,6 +56,7 @@ export default function Home() {
 				setAltIntervals={setAltIntervals}
 				setUserChordSymbol={setUserChordSymbol}
 				parsedChord={parsedChord}
+				renderedChordTxt={renderedChordTxt}
 			/>
 			<Renderer
 				useFlats={useFlats}
@@ -75,7 +76,9 @@ export default function Home() {
 				renderedChordTxt={renderedChordTxt}
 				renderedChordRaw={renderedChordRaw}
 			/>
-			<div>MIT License (2019-2020)</div>
+			<div className={'License'}>
+				&copy; Christophe Noël (2019-2020) - MIT License
+			</div>
 		</div>
 	);
 }

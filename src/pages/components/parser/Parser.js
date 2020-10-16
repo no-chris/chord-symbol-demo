@@ -12,6 +12,7 @@ const Parser = ({
 	setUserChordSymbol,
 	userChordSymbol,
 	parsedChord,
+	renderedChordTxt,
 }) => {
 	return (
 		<div>
@@ -27,7 +28,10 @@ const Parser = ({
 					altIntervals={altIntervals}
 					setAltIntervals={setAltIntervals}
 				/>
-				<Parsed parsedChord={parsedChord} />
+				<Parsed
+					parsedChord={parsedChord}
+					renderedChordTxt={renderedChordTxt}
+				/>
 			</div>
 		</div>
 	);
