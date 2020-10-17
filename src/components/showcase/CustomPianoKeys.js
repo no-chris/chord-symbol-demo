@@ -1,6 +1,4 @@
-import React from 'react';
-
-import 'custom-piano-keys';
+import React, { useEffect } from 'react';
 
 const allRootNoteIndex = {
 	C: 0,
@@ -23,6 +21,10 @@ const allRootNoteIndex = {
 };
 
 const CustomPianoKeys = ({ renderedChordRaw }) => {
+	useEffect(() => {
+		import('custom-piano-keys');
+	}, []);
+
 	return (
 		<div className={'Showcase_Item'}>
 			<h3>Custom Piano Keys</h3>

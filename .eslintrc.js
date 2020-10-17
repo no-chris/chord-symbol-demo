@@ -7,7 +7,7 @@ module.exports = {
 
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	parserOptions: {
-		ecmaVersion: 2018,
+		ecmaVersion: 11,
 		sourceType: 'module',
 		jsx: true,
 	},

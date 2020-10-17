@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 
 import { chordParserFactory, chordRendererFactory } from 'chord-symbol';
 
-import Parser from './components/parser/Parser';
-import Intro from './components/Intro';
-import Logo from './components/Logo';
-import Renderer from './components/renderer/Renderer';
+import Parser from '../components/parser/Parser';
+import Intro from '../components/Intro';
+import Logo from '../components/Logo';
+import Renderer from '../components/renderer/Renderer';
+import Showcase from '../components/showcase/Showcase';
 
 const defaultUserSymbol = 'Ab(b9)';
 const defaultAltIntervals = {
@@ -73,6 +74,7 @@ export default function Home() {
 				renderedChordTxt={renderedChordTxt}
 				renderedChordRaw={renderedChordRaw}
 			/>
+			<Showcase renderedChordRaw={renderedChordRaw} />
 			<div className={'License'}>
 				&copy; Christophe Noël (2019-2020) - MIT License
 			</div>
