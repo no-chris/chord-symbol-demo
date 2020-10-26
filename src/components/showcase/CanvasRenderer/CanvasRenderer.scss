@@ -1,0 +1,6 @@
+@font-face {
+	font-family: "Petaluma Script";
+	src: url("PetalumaScript.woff"); // IE partial support: https://caniuse.com/?search=woff
+	src: url("PetalumaScript.woff2") format("woff2"), // other browsers support woff2: https://caniuse.com/?search=woff2
+		 url("PetalumaScript.woff") format("woff"); // fallback to woff
+}
