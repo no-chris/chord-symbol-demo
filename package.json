@@ -2,7 +2,7 @@
   "name": "chord-symbol-demo",
   "private": true,
   "description": "Demo Site for the ChordSymbol library",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "scripts": {
     "build": "npx eslint src && npm run version && gatsby build",
