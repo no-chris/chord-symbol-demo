@@ -5,27 +5,28 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "npx eslint src && gatsby build",
+    "build": "npx eslint src && npm run version && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "version": "node ./src/createGetChordSymbolVersion.js",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "chord-symbol": "^1.0.0",
+    "chord-symbol": "^1.1.0",
     "custom-piano-keys": "0.0.14",
-    "gatsby": "^2.24.67",
-    "gatsby-plugin-sass": "^2.3.16",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "gatsby": "^2.24.85",
+    "gatsby-plugin-sass": "^2.3.21",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "node-sass": "^4.14.1",
-    "eslint": "^7.11.0",
-    "eslint-plugin-react": "^7.21.4",
-    "eslint-plugin-react-hooks": "^4.1.2",
     "prettier": "2.1.2"
   },
   "repository": {

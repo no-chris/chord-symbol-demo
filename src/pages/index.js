@@ -10,6 +10,8 @@ import Logo from '../components/Logo';
 import Renderer from '../components/renderer/Renderer';
 import Showcase from '../components/showcase/Showcase';
 
+import getChordSymbolVersion from '../getChordSymbolVersion';
+
 const defaultUserSymbol = 'Ab(b9)';
 const defaultAltIntervals = {
 	fifthFlat: true,
@@ -76,7 +78,10 @@ export default function Home() {
 			/>
 			<Showcase renderedChordRaw={renderedChordRaw} />
 			<div className={'License'}>
-				&copy; Christophe Noël (2019-2020) - MIT License
+				&copy; Christophe Noël (2019-{new Date().getFullYear()}) - MIT
+				License
+				<br />
+				chord-symbol {getChordSymbolVersion()}
 			</div>
 		</div>
 	);
