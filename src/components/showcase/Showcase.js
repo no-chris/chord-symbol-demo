@@ -1,6 +1,7 @@
 import React from 'react';
 
 import CustomPianoKeys from './CustomPianoKeys';
+import CanvasRenderer from './CanvasRenderer/CanvasRenderer';
 
 const Showcase = ({ renderedChordRaw }) => {
 	return (
@@ -14,6 +15,7 @@ const Showcase = ({ renderedChordRaw }) => {
 			</a>
 			.
 			<CustomPianoKeys renderedChordRaw={renderedChordRaw} />
+			<CanvasRenderer renderedChordRaw={renderedChordRaw} />
 		</div>
 	);
 };
