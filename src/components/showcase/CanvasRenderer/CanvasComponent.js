@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { BbFormat } from 'bb-chord-symbol'
+import { BbFormat } from 'bb-chord-symbol';
 
 import './CanvasRenderer.scss';
 
