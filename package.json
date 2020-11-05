@@ -16,15 +16,15 @@
   },
   "dependencies": {
     "bb-chord-symbol": "^1.0.10",
-    "chord-symbol": "^1.1.0",
+    "chord-symbol": "^1.1.1",
     "custom-piano-keys": "0.0.14",
-    "gatsby": "^2.24.85",
-    "gatsby-plugin-sass": "^2.3.21",
+    "gatsby": "^2.25.2",
+    "gatsby-plugin-sass": "^2.4.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "eslint": "^7.12.0",
+    "eslint": "^7.12.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "node-sass": "^4.14.1",
