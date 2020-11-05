@@ -10,7 +10,7 @@ const Showcase = ({ renderedChordRaw }) => {
 			Please find below examples of how <code>ChordSymbol</code> can be
 			used with other libraries. If you want your library to be featured
 			here, feel free to{' '}
-			<a href={'https://github.com/no-chris/chord-symbol/'}>
+			<a href={'https://github.com/no-chris/chord-symbol-demo/'}>
 				submit a PR
 			</a>
 			.
