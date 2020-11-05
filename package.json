@@ -5,7 +5,7 @@
   "version": "1.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "npx eslint src && npm run version && npx run format && gatsby build",
+    "build": "npx eslint src && npm run version && npm run format && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
