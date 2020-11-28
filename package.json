@@ -16,19 +16,19 @@
   },
   "dependencies": {
     "bb-chord-symbol": "^1.0.10",
-    "chord-symbol": "^1.1.1",
-    "custom-piano-keys": "0.0.14",
-    "gatsby": "^2.25.2",
-    "gatsby-plugin-sass": "^2.4.2",
+    "chord-symbol": "^1.2.0",
+    "custom-piano-keys": "0.0.15",
+    "gatsby": "^2.27.4",
+    "gatsby-plugin-sass": "^2.6.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "eslint": "^7.12.1",
+    "eslint": "^7.14.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "node-sass": "^4.14.1",
-    "prettier": "2.1.2"
+    "prettier": "^2.2.1"
   },
   "repository": {
     "type": "git",

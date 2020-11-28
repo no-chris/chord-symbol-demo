@@ -11,7 +11,7 @@ const Intro = () => {
 				While most chord parsing libraries expect you to write chord
 				symbols in a specific way, <code>ChordSymbol</code> can handle
 				whatever chord syntax you throw at him, or almost. Currently,
-				the unit test suite contains more than 65 000 distinct chords
+				the unit test suite contains more than 37 000 distinct chords
 				symbols!
 			</p>
 			<p>
