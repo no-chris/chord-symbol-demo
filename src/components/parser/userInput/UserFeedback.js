@@ -1,19 +1,20 @@
 import React from 'react';
 
-const UserFeedback = ({ parsingError, userChordSymbol }) => {
+const UserFeedback = ({ parsingError }) => {
 	let feedbackMsg;
 
 	if (!parsingError) {
-		if (userChordSymbol) {
-			feedbackMsg = 'Well done! This looks like a valid chord';
-		} else {
-			feedbackMsg = "I'm ready, please give me a symbol!";
-		}
+		feedbackMsg = 'Well done! This looks like a valid chord';
 	} else {
-		if (parsingError.type === 'NoSymbolFoundError') {
-			feedbackMsg = 'Hmmmm... ' + parsingError.message;
-		} else {
-			feedbackMsg = 'Ups... ' + parsingError.message;
+		switch (parsingError.type) {
+			case 'InvalidInput':
+				feedbackMsg = "I'm ready, please give me a symbol!";
+				break;
+			case 'NoSymbolFound':
+				feedbackMsg = 'Hmmmm... ' + parsingError.message;
+				break;
+			default:
+				feedbackMsg = 'Ups... ' + parsingError.message;
 		}
 	}
 

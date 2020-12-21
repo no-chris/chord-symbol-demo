@@ -33,7 +33,7 @@ const CustomPianoKeys = ({ renderedChordRaw }) => {
 				to <code>Custom piano keys</code>.
 			</p>
 			<div>
-				{(!renderedChordRaw.error &&
+				{(renderedChordRaw &&
 					getPianoKeysComponent(renderedChordRaw)) || <code>-</code>}
 			</div>
 			<p>

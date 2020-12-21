@@ -15,8 +15,9 @@ const CanvasRenderer = ({ renderedChordRaw }) => {
 				uses <code>ChordSymbol</code> to parse the symbol given.
 			</p>
 			<div>
-				{(!renderedChordRaw.error &&
-					CanvasComponent(renderedChordRaw)) || <code> - </code>}
+				{(renderedChordRaw && CanvasComponent(renderedChordRaw)) || (
+					<code> - </code>
+				)}
 			</div>
 			<p>
 				View on{' '}

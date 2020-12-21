@@ -15,7 +15,7 @@ const Parsed = ({ parsedChord, renderedChordTxt }) => {
 				<ChordTable parsedChord={parsedChord} />
 
 				<details className={'Json_Details'}>
-					<summary>JSON representation of parsed chord</summary>
+					<summary>JSON representation of the parsed chord</summary>
 					<pre className={'json'}>
 						{JSON.stringify(parsedChord || {}, null, 2)}
 					</pre>

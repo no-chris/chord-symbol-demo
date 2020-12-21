@@ -10,7 +10,7 @@ const SymbolInput = ({ userChordSymbol, setUserChordSymbol, parsingError }) => {
 	if (userChordSymbol !== '') {
 		if (!parsingError) {
 			classNames.push('ui-SymbolInput_Container-isValid');
-		} else if (parsingError.type !== 'NoSymbolFoundError') {
+		} else if (parsingError.type !== 'NoSymbolFound') {
 			classNames.push('ui-SymbolInput_Container-isInvalid');
 		}
 	}

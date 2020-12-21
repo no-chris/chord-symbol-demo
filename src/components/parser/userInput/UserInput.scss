@@ -15,6 +15,11 @@
 	margin-right: $spacer-medium;
 }
 
+.ui-SymbolPreset_Button-random {
+	color: white;
+	background-color: #666666;
+}
+
 .ui-SymbolInput_Container {
 	margin-top: $spacer-medium;
 	padding: $spacer-small;
@@ -26,7 +31,7 @@
 }
 
 .ui-SymbolInput_Container-isInvalid {
-	background-color: $color-danger;
+	background-color: $color-warning;
 }
 
 .ui-SymbolInput_Input {

@@ -20,10 +20,7 @@ const UserInput = ({ parsingError, userChordSymbol, setUserChordSymbol }) => {
 					userChordSymbol={userChordSymbol}
 					setUserChordSymbol={setUserChordSymbol}
 				/>
-				<UserFeedback
-					parsingError={parsingError}
-					userChordSymbol={userChordSymbol}
-				/>
+				<UserFeedback parsingError={parsingError} />
 			</div>
 		</div>
 	);
