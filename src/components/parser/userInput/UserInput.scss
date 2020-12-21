@@ -3,6 +3,13 @@
 .ui-UserInput_Container {
 }
 
+.ui-UserFeedback_Container {
+	text-align: center;
+	font-style: italic;
+	padding: $spacer-small 0;
+	@include font-size(small);
+}
+
 .ui-SymbolPreset_Button {
 	margin-top: $spacer-small;
 	margin-right: $spacer-medium;

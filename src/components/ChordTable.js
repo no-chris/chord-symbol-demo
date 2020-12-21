@@ -3,9 +3,9 @@ import './ChordTable.scss';
 import React from 'react';
 
 const ChordTable = ({ parsedChord }) => {
-	const intervals = parsedChord ? parsedChord.normalized.intervals : ['-'];
-	const semitones = parsedChord ? parsedChord.normalized.semitones : ['-'];
-	const notes = parsedChord ? parsedChord.normalized.notes : ['-'];
+	const intervals = !parsedChord.error ? parsedChord.normalized.intervals : ['-'];
+	const semitones = !parsedChord.error ? parsedChord.normalized.semitones : ['-'];
+	const notes = !parsedChord.error ? parsedChord.normalized.notes : ['-'];
 
 	return (
 		<table className={'ChordTable_Table'}>
