@@ -1,6 +1,10 @@
 import React from 'react';
 
-const SymbolInput = ({ userChordSymbol, setUserChordSymbol, parsingError }) => {
+const SymbolInput = ({
+	userChordSymbol,
+	setUserChordSymbol,
+	parsingErrors,
+}) => {
 	const handleSymbolChange = (e) => {
 		const symbol = (e.target.value || '').trim();
 		setUserChordSymbol(symbol);
@@ -8,10 +12,15 @@ const SymbolInput = ({ userChordSymbol, setUserChordSymbol, parsingError }) => {
 
 	const classNames = ['ui-SymbolInput_Container'];
 	if (userChordSymbol !== '') {
-		if (!parsingError) {
+		if (!parsingErrors) {
 			classNames.push('ui-SymbolInput_Container-isValid');
-		} else if (parsingError.type !== 'NoSymbolFound') {
-			classNames.push('ui-SymbolInput_Container-isInvalid');
+		} else {
+			const isInvalid = parsingErrors.some(
+				(error) => error.type !== 'NoSymbolFound'
+			);
+			if (isInvalid) {
+				classNames.push('ui-SymbolInput_Container-isInvalid');
+			}
 		}
 	}
 

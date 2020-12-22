@@ -6,7 +6,7 @@ import SymbolPresetList from './SymbolPresetList';
 import SymbolInput from './SymbolInput';
 import UserFeedback from './UserFeedback';
 
-const UserInput = ({ parsingError, userChordSymbol, setUserChordSymbol }) => {
+const UserInput = ({ parsingErrors, userChordSymbol, setUserChordSymbol }) => {
 	return (
 		<div>
 			<div className={'ui-UserInput_Container'}>
@@ -16,11 +16,11 @@ const UserInput = ({ parsingError, userChordSymbol, setUserChordSymbol }) => {
 				</div>
 				<SymbolPresetList setUserChordSymbol={setUserChordSymbol} />
 				<SymbolInput
-					parsingError={parsingError}
+					parsingErrors={parsingErrors}
 					userChordSymbol={userChordSymbol}
 					setUserChordSymbol={setUserChordSymbol}
 				/>
-				<UserFeedback parsingError={parsingError} />
+				<UserFeedback parsingErrors={parsingErrors} />
 			</div>
 		</div>
 	);

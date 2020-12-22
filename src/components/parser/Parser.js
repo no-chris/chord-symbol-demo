@@ -12,7 +12,7 @@ const Parser = ({
 	setUserChordSymbol,
 	userChordSymbol,
 	parsedChord,
-	parsingError,
+	parsingErrors,
 	renderedChordDefault,
 }) => {
 	return (
@@ -22,7 +22,7 @@ const Parser = ({
 				<UserInput
 					userChordSymbol={userChordSymbol}
 					setUserChordSymbol={setUserChordSymbol}
-					parsingError={parsingError}
+					parsingErrors={parsingErrors}
 				/>
 				<ParserConfig
 					parsedChord={parsedChord}
