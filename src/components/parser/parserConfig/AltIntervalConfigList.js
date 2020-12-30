@@ -27,7 +27,7 @@ const AltIntervalConfigList = ({
 					id={interval.id}
 					label={interval.label}
 					disabled={
-						parsedChord ? !parsedChord.normalized.intents.alt : true
+						!parsedChord.error ? !parsedChord.normalized.intents.alt : true
 					}
 				/>
 			))}

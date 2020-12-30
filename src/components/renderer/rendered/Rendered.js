@@ -15,11 +15,11 @@ const Rendered = ({ renderedChordTxt, renderedChordRaw }) => {
 
 			<details className={'Json_Details'}>
 				<summary>
-					JSON representation of rendered chord (&quot;Raw&quot;
+					JSON representation of the rendered chord (&quot;Raw&quot;
 					printer)
 				</summary>
 				<pre className={'json'}>
-					{JSON.stringify(renderedChordRaw || {}, null, 2)}
+					{JSON.stringify(renderedChordRaw, null, 2)}
 				</pre>
 			</details>
 		</div>

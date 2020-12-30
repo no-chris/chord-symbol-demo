@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="src &amp; tests" pattern="file[chord-symbol-demo]:src//*" />
+</component>

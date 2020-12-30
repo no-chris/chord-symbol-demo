@@ -2,7 +2,10 @@ import '../../scss/styles.scss';
 
 import React, { useState } from 'react';
 
-import { chordParserFactory, chordRendererFactory } from 'chord-symbol';
+import {
+	chordParserFactory,
+	chordRendererFactory,
+} from '../../../chord-symbol/src/index';
 
 import Parser from '../components/parser/Parser';
 import Intro from '../components/Intro';
@@ -34,6 +37,11 @@ export default function Home() {
 	const parseChord = chordParserFactory({ altIntervals });
 	const parsedChord = parseChord(userChordSymbol);
 
+	let parsingError;
+	if (parsedChord.error) {
+		parsingError = parsedChord.error[0];
+	}
+
 	const rendererConfig = {
 		useShortNamings,
 		transposeValue,
@@ -61,6 +69,7 @@ export default function Home() {
 				setUserChordSymbol={setUserChordSymbol}
 				parsedChord={parsedChord}
 				renderedChordDefault={renderedChordDefault}
+				parsingError={parsingError}
 			/>
 			<Renderer
 				useFlats={useFlats}
