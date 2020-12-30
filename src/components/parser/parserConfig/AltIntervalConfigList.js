@@ -15,23 +15,40 @@ const AltIntervalConfigList = ({
 		{ id: 'eleventhSharp', label: '#11' },
 		{ id: 'thirteenthFlat', label: 'b13' },
 	];
+	const altIntervalsDesc =
+		'user selection of intervals affected by the "alt" modifier (all by default). ' +
+		'If you would like "alt" to consistently yield a specific set of intervals, you can specify those here.';
 
 	return (
-		<div className={'parserConfigItem_Container'}>
-			<div className={'pc-AltIntervalList_Label'}>Alt intervals:</div>
-			{altIntervalsList.map((interval) => (
-				<AltIntervalConfig
-					key={interval.id}
-					setAltIntervals={setAltIntervals}
-					altIntervals={altIntervals}
-					id={interval.id}
-					label={interval.label}
-					disabled={
-						!parsedChord.error ? !parsedChord.normalized.intents.alt : true
-					}
-				/>
-			))}
-		</div>
+		<tr>
+			<td>
+				<div className={'parserConfigItem_Container'}>
+					<div className={'pc-CheckboxList_Label'}>
+						Alt intervals:
+					</div>
+					{altIntervalsList.map((interval) => (
+						<AltIntervalConfig
+							key={interval.id}
+							setAltIntervals={setAltIntervals}
+							altIntervals={altIntervals}
+							id={interval.id}
+							label={interval.label}
+							disabled={
+								!parsedChord.error
+									? !parsedChord.normalized.intents.alt
+									: true
+							}
+						/>
+					))}
+				</div>
+			</td>
+			<td
+				className={'configuration_Desc'}
+				dangerouslySetInnerHTML={{
+					__html: altIntervalsDesc,
+				}}
+			></td>
+		</tr>
 	);
 };
 

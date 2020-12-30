@@ -13,7 +13,7 @@ const AltIntervalConfig = ({
 	};
 
 	return (
-		<div className={'pc-AltIntervalList_Item'}>
+		<div className={'pc-CheckboxList_Item'}>
 			<input
 				id={id}
 				type={'checkbox'}
@@ -21,7 +21,7 @@ const AltIntervalConfig = ({
 				checked={altIntervals[id]}
 				onChange={handleChange}
 				disabled={disabled}
-				className={'pc-AltIntervalList_Checkbox'}
+				className={'pc-CheckboxList_Checkbox'}
 			/>
 			<label htmlFor={id}>{label}</label>
 		</div>
