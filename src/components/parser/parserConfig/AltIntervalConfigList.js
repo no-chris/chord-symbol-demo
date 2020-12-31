@@ -28,7 +28,7 @@ const AltIntervalConfigList = ({
 					</div>
 					{altIntervalsList.map((interval) => (
 						<AltIntervalConfig
-							key={interval.id}
+							key={'AltIntervalConfig' + interval.id}
 							setAltIntervals={setAltIntervals}
 							altIntervals={altIntervals}
 							id={interval.id}

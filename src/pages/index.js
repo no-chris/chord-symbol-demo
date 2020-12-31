@@ -30,12 +30,18 @@ export default function Home() {
 	const [transposeValue, setTransposeValue] = useState(0);
 	const [harmonizeAccidentals, setHarmonizeAccidentals] = useState(false);
 	const [useFlats, setUseFlats] = useState(false);
-	const [notationSystems, setNotationSystems] = useState(
+	const [rendererNotationSystem, setRendererNotationSystem] = useState(
+		'english'
+	);
+	const [parserNotationSystems, setParserNotationSystems] = useState(
 		defaultNotationSystems
 	);
 	const [altIntervals, setAltIntervals] = useState(defaultAltIntervals);
 
-	const parseChord = chordParserFactory({ notationSystems, altIntervals });
+	const parseChord = chordParserFactory({
+		notationSystems: parserNotationSystems,
+		altIntervals,
+	});
 	const parsedChord = parseChord(userChordSymbol);
 
 	let parsingErrors;
@@ -49,6 +55,7 @@ export default function Home() {
 		harmonizeAccidentals,
 		useFlats,
 		simplify,
+		notationSystem: rendererNotationSystem,
 	};
 	const renderDefault = chordRendererFactory();
 	const renderedChordDefault = renderDefault(parsedChord);
@@ -64,8 +71,8 @@ export default function Home() {
 			<Intro />
 			<h2>Demo</h2>
 			<Parser
-				notationSystems={notationSystems}
-				setNotationSystems={setNotationSystems}
+				notationSystems={parserNotationSystems}
+				setNotationSystems={setParserNotationSystems}
 				altIntervals={altIntervals}
 				userChordSymbol={userChordSymbol}
 				setAltIntervals={setAltIntervals}
@@ -78,12 +85,14 @@ export default function Home() {
 				useFlats={useFlats}
 				transposeValue={transposeValue}
 				harmonizeAccidentals={harmonizeAccidentals}
+				notationSystem={rendererNotationSystem}
 				simplify={simplify}
 				useShortNamings={useShortNamings}
 				setUseShortNamings={setUseShortNamings}
 				setSimplify={setSimplify}
 				setTransposeValue={setTransposeValue}
 				setHarmonizeAccidentals={setHarmonizeAccidentals}
+				setNotationSystem={setRendererNotationSystem}
 				setUseFlats={setUseFlats}
 				renderedChordTxt={renderedChordTxt}
 				renderedChordRaw={renderedChordRaw}

@@ -22,7 +22,7 @@ const NotationSystemsConfigList = ({ setNotationSystems, notationSystems }) => {
 					</div>
 					{notationSystemsList.map((notationSystem) => (
 						<NotationSystemConfig
-							key={notationSystem.id}
+							key={'NotationSystemConfig' + notationSystem.id}
 							setNotationSystems={setNotationSystems}
 							notationSystems={notationSystems}
 							id={notationSystem.id}

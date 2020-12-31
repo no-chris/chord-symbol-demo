@@ -26,14 +26,14 @@ const NotationSystemConfig = ({
 		<div className={'pc-CheckboxList_Item'}>
 			<input
 				disabled={isTheLastCheckedOne}
-				id={id}
+				id={'parserNotationSystem' + id}
 				type={'checkbox'}
 				value={id}
 				checked={notationSystems.includes(id)}
 				onChange={handleChange}
 				className={'pc-CheckboxList_Checkbox'}
 			/>
-			<label htmlFor={id}>
+			<label htmlFor={'parserNotationSystem' + id}>
 				{label}{' '}
 				<span className={'pc-CheckboxList_ItemDescription'}>
 					({description})
