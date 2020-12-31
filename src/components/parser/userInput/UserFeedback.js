@@ -28,7 +28,7 @@ const UserFeedback = ({ parsingErrors }) => {
 	return (
 		<div className={'ui-UserFeedback_Container'}>
 			{allFeedbackMsg
-				.map((e, i) => <span key={i}>{e}</span>)
+				.map((e, i) => <span key={'userFeedback' + i}>{e}</span>)
 				.reduce((prev, curr, i) => {
 					return prev === null
 						? [curr]

@@ -2,6 +2,7 @@ import './RendererConfig.scss';
 
 import React from 'react';
 
+import ConvertNotationSystemConfigList from './ConvertNotationSystemConfigList';
 import TransposeValueConfig from './TransposeValueConfig';
 import HarmonizeAccidentalsConfig from './HarmonizeAccidentalsConfig';
 import UseFlatsConfig from './UseFlatsConfig';
@@ -13,11 +14,13 @@ const RendererConfig = ({
 	harmonizeAccidentals,
 	simplify,
 	transposeValue,
+	notationSystem,
 	useFlats,
 	useShortNamings,
 	setHarmonizeAccidentals,
 	setSimplify,
 	setTransposeValue,
+	setNotationSystem,
 	setUseFlats,
 	setUseShortNamings,
 }) => {
@@ -37,13 +40,16 @@ const RendererConfig = ({
 			  'extensions, most alterations, adds and omits. Seventh, altered fifth and bass note are kept.'
 			: 'Maximum simplification: remove all chord changes but the minor third.';
 
+	const convertNotationSystemDesc =
+		'<code>Auto</code> will render the chord using the notation system detected during the parsing';
+
 	return (
 		<div className={'ui-RendererConfig_Container'}>
 			<strong>Renderer configuration:</strong>
 			<table className={'configuration_Table'}>
 				<tbody>
 					<tr>
-						<td width={'33%'}>
+						<td width={'40%'}>
 							<UseShortNamingsConfig
 								useShortNamings={useShortNamings}
 								setUseShortNamings={setUseShortNamings}
@@ -72,7 +78,7 @@ const RendererConfig = ({
 						></td>
 					</tr>
 					<tr>
-						<td>
+						<td colSpan={2}>
 							<TransposeValueConfig
 								transposeValue={transposeValue}
 								setTransposeValue={setTransposeValue}
@@ -81,6 +87,20 @@ const RendererConfig = ({
 					</tr>
 					<tr>
 						<td>
+							<ConvertNotationSystemConfigList
+								notationSystem={notationSystem}
+								setNotationSystem={setNotationSystem}
+							/>
+						</td>
+						<td
+							className={'configuration_Desc'}
+							dangerouslySetInnerHTML={{
+								__html: convertNotationSystemDesc,
+							}}
+						></td>
+					</tr>
+					<tr>
+						<td colSpan={2}>
 							<HarmonizeAccidentalsConfig
 								harmonizeAccidentals={harmonizeAccidentals}
 								setHarmonizeAccidentals={
@@ -90,7 +110,7 @@ const RendererConfig = ({
 						</td>
 					</tr>
 					<tr>
-						<td>
+						<td colSpan={2}>
 							<UseFlatsConfig
 								useFlats={useFlats}
 								setUseFlats={setUseFlats}

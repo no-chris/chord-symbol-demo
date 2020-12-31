@@ -11,16 +11,22 @@
 .pc-AltIntervalList_Container {
 }
 
-.pc-AltIntervalList_Label {
+.pc-CheckboxList_Label {
 	margin-right: $spacer-medium;
 	display: inline-block;
 }
 
-.pc-AltIntervalList_Item {
+.pc-CheckboxList_Item {
 	margin-right: $spacer-medium;
 	display: inline-block;
 }
 
-.pc-AltIntervalList_Checkbox {
+.pc-CheckboxList_ItemDescription {
+	@include font-size(small);
+	font-style: italic;
+	color: $gray-600;
+}
+
+.pc-CheckboxList_Checkbox {
 	margin-right: $spacer-tiny;
 }

@@ -14,6 +14,8 @@ const Parser = ({
 	parsedChord,
 	parsingErrors,
 	renderedChordDefault,
+	notationSystems,
+	setNotationSystems,
 }) => {
 	return (
 		<div>
@@ -26,6 +28,8 @@ const Parser = ({
 				/>
 				<ParserConfig
 					parsedChord={parsedChord}
+					notationSystems={notationSystems}
+					setNotationSystems={setNotationSystems}
 					altIntervals={altIntervals}
 					setAltIntervals={setAltIntervals}
 				/>

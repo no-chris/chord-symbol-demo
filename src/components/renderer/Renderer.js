@@ -9,11 +9,13 @@ const Renderer = ({
 	harmonizeAccidentals,
 	simplify,
 	transposeValue,
+	notationSystem,
 	useFlats,
 	useShortNamings,
 	setHarmonizeAccidentals,
 	setSimplify,
 	setTransposeValue,
+	setNotationSystem,
 	setUseFlats,
 	setUseShortNamings,
 	renderedChordTxt,
@@ -29,11 +31,13 @@ const Renderer = ({
 					transposeValue={transposeValue}
 					useFlats={useFlats}
 					useShortNamings={useShortNamings}
+					notationSystem={notationSystem}
 					setHarmonizeAccidentals={setHarmonizeAccidentals}
 					setSimplify={setSimplify}
 					setTransposeValue={setTransposeValue}
 					setUseFlats={setUseFlats}
 					setUseShortNamings={setUseShortNamings}
+					setNotationSystem={setNotationSystem}
 				/>
 				<Rendered
 					renderedChordTxt={renderedChordTxt}
