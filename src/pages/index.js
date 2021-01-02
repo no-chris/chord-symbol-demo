@@ -14,14 +14,7 @@ import getChordSymbolVersion from '../getChordSymbolVersion';
 
 const defaultUserSymbol = 'Ab(b9)';
 const defaultNotationSystems = ['english', 'german', 'latin'];
-const defaultAltIntervals = {
-	fifthFlat: true,
-	fifthSharp: true,
-	ninthFlat: true,
-	ninthSharp: true,
-	eleventhSharp: true,
-	thirteenthFlat: true,
-};
+const defaultAltIntervals = ['b5', '#5', 'b9', '#9', '#11', 'b13'];
 
 export default function Home() {
 	const [userChordSymbol, setUserChordSymbol] = useState(defaultUserSymbol);

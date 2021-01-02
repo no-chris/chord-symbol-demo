@@ -8,8 +8,15 @@ const AltIntervalConfig = ({
 	disabled,
 }) => {
 	const handleChange = (e) => {
-		altIntervals[id] = e.target.checked;
-		setAltIntervals(Object.assign({}, altIntervals));
+		if (e.target.checked) {
+			if (!altIntervals.includes(id)) {
+				altIntervals.push(id);
+			}
+		} else if (altIntervals.length > 1) {
+			const index = altIntervals.findIndex((el) => el === id);
+			altIntervals.splice(index, 1);
+		}
+		setAltIntervals([...altIntervals]);
 	};
 
 	return (
@@ -18,7 +25,7 @@ const AltIntervalConfig = ({
 				id={id}
 				type={'checkbox'}
 				value={altIntervals[id]}
-				checked={altIntervals[id]}
+				checked={altIntervals.includes(id)}
 				onChange={handleChange}
 				disabled={disabled}
 				className={'pc-CheckboxList_Checkbox'}

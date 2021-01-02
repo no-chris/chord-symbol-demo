@@ -8,12 +8,12 @@ const AltIntervalConfigList = ({
 	setAltIntervals,
 }) => {
 	const altIntervalsList = [
-		{ id: 'fifthFlat', label: 'b5' },
-		{ id: 'fifthSharp', label: '#5' },
-		{ id: 'ninthFlat', label: 'b9' },
-		{ id: 'ninthSharp', label: '#9' },
-		{ id: 'eleventhSharp', label: '#11' },
-		{ id: 'thirteenthFlat', label: 'b13' },
+		{ id: 'b5', label: 'b5' },
+		{ id: '#5', label: '#5' },
+		{ id: 'b9', label: 'b9' },
+		{ id: '#9', label: '#9' },
+		{ id: '#11', label: '#11' },
+		{ id: 'b13', label: 'b13' },
 	];
 	const altIntervalsDesc =
 		'user selection of intervals affected by the "alt" modifier (all by default). ' +
