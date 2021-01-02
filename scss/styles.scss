@@ -33,7 +33,6 @@ button {
 	white-space: nowrap;
 	@include font-size(h2);
 	color: black;
-	//background-color: $gray-100;
 }
 
 h1,
@@ -81,4 +80,8 @@ h3 {
 	margin: $spacer-large 0;
 	@include font-size(small);
 	color: $gray-600;
+}
+
+code {
+	color: $blue-500;
 }

@@ -3,9 +3,21 @@
 .ui-UserInput_Container {
 }
 
+.ui-UserFeedback_Container {
+	text-align: center;
+	font-style: italic;
+	padding: $spacer-small 0;
+	@include font-size(small);
+}
+
 .ui-SymbolPreset_Button {
 	margin-top: $spacer-small;
 	margin-right: $spacer-medium;
+}
+
+.ui-SymbolPreset_Button-random {
+	color: white;
+	background-color: #666666;
 }
 
 .ui-SymbolInput_Container {
@@ -19,7 +31,7 @@
 }
 
 .ui-SymbolInput_Container-isInvalid {
-	background-color: $color-danger;
+	background-color: $color-warning;
 }
 
 .ui-SymbolInput_Input {
