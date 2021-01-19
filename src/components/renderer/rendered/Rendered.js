@@ -18,8 +18,10 @@ const Rendered = ({ renderedChordTxt, renderedChordRaw }) => {
 					JSON representation of the rendered chord (&quot;Raw&quot;
 					printer)
 				</summary>
-				<pre className={'json'}>
-					{JSON.stringify(renderedChordRaw, null, 2)}
+				<pre>
+					<code className={'language-json'}>
+						{JSON.stringify(renderedChordRaw, null, 2)}
+					</code>
 				</pre>
 			</details>
 		</div>

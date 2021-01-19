@@ -15,16 +15,21 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "babel-plugin-prismjs": "^2.0.1",
+    "babel-preset-gatsby": "^0.11.0",
     "bb-chord-symbol": "^1.0.10",
-    "chord-symbol": "^2.0.0",
+    "chord-symbol": "^2.1.0",
+    "chord-symbol-musicxml": "^0.1.0",
     "custom-piano-keys": "0.0.15",
-    "gatsby": "^2.29.3",
+    "gatsby": "^2.31.0",
     "gatsby-plugin-sass": "^2.8.0",
+    "jstoxml": "^2.0.3",
+    "prismjs": "^1.23.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "eslint": "^7.17.0",
+    "eslint": "^7.18.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "node-sass": "^4.14.1",

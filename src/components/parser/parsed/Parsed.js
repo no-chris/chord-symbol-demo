@@ -16,8 +16,10 @@ const Parsed = ({ parsedChord, renderedChordTxt }) => {
 
 				<details className={'Json_Details'}>
 					<summary>JSON representation of the parsed chord</summary>
-					<pre className={'json'}>
-						{JSON.stringify(parsedChord || {}, null, 2)}
+					<pre>
+						<code className={'language-json'}>
+							{JSON.stringify(parsedChord || {}, null, 2)}
+						</code>
 					</pre>
 				</details>
 			</div>
