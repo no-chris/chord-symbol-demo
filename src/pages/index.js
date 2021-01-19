@@ -13,7 +13,7 @@ import Renderer from '../components/renderer/Renderer';
 import Showcase from '../components/showcase/Showcase';
 import MusicXml from '../components/musicxml/MusicXml';
 
-import getChordSymbolVersion from '../getChordSymbolVersion';
+import getVersions from '../getVersions';
 
 const defaultUserSymbol = 'Ab(b9)';
 const defaultNotationSystems = ['english', 'german', 'latin'];
@@ -69,6 +69,8 @@ export default function Home() {
 	const renderedChordRaw = renderChordRaw(parsedChord);
 	const renderedChordMusicXml = renderChordMusicXml(parsedChord);
 
+	const versions = getVersions();
+
 	return (
 		<div className={'main'}>
 			<Logo />
@@ -107,7 +109,8 @@ export default function Home() {
 				&copy; Christophe Noël (2019-{new Date().getFullYear()}) - MIT
 				License
 				<br />
-				chord-symbol {getChordSymbolVersion()}
+				chord-symbol {versions['chord-symbol']} - chord-symbol-musicxml{' '}
+				{versions['chord-symbol-musicxml']}
 			</div>
 		</div>
 	);
