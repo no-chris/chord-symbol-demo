@@ -21,7 +21,7 @@
     "chord-symbol": "^2.1.0",
     "chord-symbol-musicxml": "^0.1.1",
     "custom-piano-keys": "0.0.15",
-    "gatsby": "^2.31.1",
+    "gatsby": "^2.32.8",
     "gatsby-plugin-sass": "^2.8.0",
     "jstoxml": "^2.0.3",
     "prismjs": "^1.23.0",
