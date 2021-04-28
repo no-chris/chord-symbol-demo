@@ -16,23 +16,23 @@
   },
   "dependencies": {
     "babel-plugin-prismjs": "^2.0.1",
-    "babel-preset-gatsby": "^0.11.0",
+    "babel-preset-gatsby": "^1.4.0",
     "bb-chord-symbol": "^1.0.10",
     "chord-symbol": "^2.1.0",
     "chord-symbol-musicxml": "^0.1.1",
     "custom-piano-keys": "0.0.15",
-    "gatsby": "^2.32.8",
-    "gatsby-plugin-sass": "^2.8.0",
-    "jstoxml": "^2.0.3",
+    "gatsby": "^3.4.0",
+    "gatsby-plugin-sass": "^4.4.0",
+    "jstoxml": "^2.0.5",
     "prismjs": "^1.23.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "eslint": "^7.21.0",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint": "^7.25.0",
+    "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^5.0.0",
     "prettier": "^2.2.1"
   },
   "repository": {
