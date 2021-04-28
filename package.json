@@ -23,7 +23,7 @@
     "custom-piano-keys": "0.0.15",
     "gatsby": "^2.32.8",
     "gatsby-plugin-sass": "^2.8.0",
-    "jstoxml": "^2.0.3",
+    "jstoxml": "^2.0.5",
     "prismjs": "^1.23.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
